@@ -6,6 +6,7 @@ public class PercussionStringInstruments extends StringInstruments{
 	private Orientation orientationInstrument;
 	private Box box;
 	private Keyboard keyboard;
+	private double totalDimensions;
 	
 	public PercussionStringInstruments(String idNumber, String name, double height, double length, double width, Orientation orientationInstrument, Place instrumentPlace, String nameDistributor, String address, String phone, double heightBox, double lengthBox, double widthBox, int amountOctaves, String material, double heightKeyboard, double lengthKeyboard, double widthKeyboard){
 		
@@ -14,6 +15,7 @@ public class PercussionStringInstruments extends StringInstruments{
 		box = new Box(heightBox, lengthBox, widthBox);
 		keyboard = new Keyboard(amountOctaves, material, heightKeyboard, lengthKeyboard, widthKeyboard);
 		
+		totalDimensions = height + length + width + heightBox + lengthBox + widthBox + heightKeyboard + lengthKeyboard + widthKeyboard;
 	}
 	
 	//getters and setters Methods

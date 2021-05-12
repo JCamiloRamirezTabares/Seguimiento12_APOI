@@ -1,6 +1,6 @@
 package model;
 
-public class StringInstruments extends Instruments{
+public abstract class StringInstruments extends Instruments{
 	
 	//Constructor Method
 	public StringInstruments(String idNumber, String name, double height, double length, double width, Place instrumentPlace, String nameDistributor, String address, String phone){
